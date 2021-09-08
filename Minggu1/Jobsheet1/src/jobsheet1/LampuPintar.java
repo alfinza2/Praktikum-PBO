@@ -1,14 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package jobsheet1;
 
-/**
- *
- * @author Alfinza SP
- */
-public class LampuPintar {
-    
+public class LampuPintar extends Lampu {
+
+    private String warna;
+
+    public void setWarna(String newValue) {
+        warna = newValue;
+    }
+
+    public void setWarna() {
+        super.cetak();
+        System.out.println("Warna : " + warna);
+    }
 }
+
+

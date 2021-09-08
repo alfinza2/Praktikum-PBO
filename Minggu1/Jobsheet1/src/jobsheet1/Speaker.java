@@ -1,14 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package jobsheet1;
 
-/**
- *
- * @author Alfinza SP
- */
 public class Speaker {
+    private String merk;
+    private int volume;
     
+    public void setMerk(String newValue){
+        merk = newValue;
+    }
+    
+    public void ubahVolume(int newValue){
+        volume = newValue;
+    }
+    
+    public void tambahVolume(int increment){
+        volume = volume + increment;
+    }
+    
+    public void kurangVolume(int decrement){
+        volume = volume - decrement;
+    }
+    
+    public void cetak(){
+        System.out.println("Merk         : " + merk);
+        System.out.println("Volume Suara : " + volume);
+    }
 }
+
